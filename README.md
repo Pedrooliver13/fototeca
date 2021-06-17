@@ -4,7 +4,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 
 ```bash
 # Clone this repository
-$ npx create-next-app -e https://github.com/Pedrooliver13/Boilerplate-next
+$ npx create-next-app -e https://github.com/Pedrooliver13/boilerplate
 
 # run
 yarn dev or npm run dev
