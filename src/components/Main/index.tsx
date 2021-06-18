@@ -10,6 +10,8 @@ const Main = ({
       <S.Logo
         src="/img/logo.svg"
         alt="Imagem de um átomo e React Avançado escrito ao lado."
+        width="200"
+        height="200"
       />
 
       <S.Title>{title}</S.Title>
@@ -18,6 +20,8 @@ const Main = ({
       <S.Illustration
         src="/img/hero-illustration.svg"
         alt="Um Desenvolverdor de frente para uma tela de código"
+        width="200"
+        height="200"
       />
     </S.Wrapper>
   );
