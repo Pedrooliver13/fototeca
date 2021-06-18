@@ -1,16 +1,15 @@
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
 import Main from '.';
 
 export default {
   title: 'Main',
-  component: Main,
-  decorators: [withKnobs]
-};
+  component: Main
+} as Meta;
 
-export const Basic = () => (
-  <Main
-    title={text('Title', 'React Avançado')}
-    description={text('description', 'Typescript é FODA')}
-  />
-);
+export const Basic: Story = (args) => <Main {...args} />;
+
+Basic.args = {
+  title: 'Hello World',
+  description: 'asfjasjf'
+};
