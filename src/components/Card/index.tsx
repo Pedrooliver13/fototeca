@@ -1,11 +1,11 @@
 import * as S from './styles';
 
-const Button = () => {
+const Card = () => {
   return (
     <S.Wrapper>
-      <h1>Button</h1>
+      <h1>Card</h1>
     </S.Wrapper>
   );
 };
 
-export default Button;
+export default Card;
