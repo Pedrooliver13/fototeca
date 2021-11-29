@@ -1,6 +1,10 @@
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
 
+import Card from 'components/Card';
+import Logo from 'components/Logo';
+import { Container } from 'styles/container';
+
 import { getPhotos } from 'service/photos';
 
 interface Props {
@@ -16,6 +20,7 @@ interface Photo {
   src: {
     original: string;
     small: string;
+    large: string;
   };
 }
 
@@ -27,9 +32,13 @@ export default function Home(props: Props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {props.photos.map((photo: Photo, index) => (
-        <img key={index} src={photo.src.small} />
-      ))}
+      <Container>
+        <Logo />
+        <a href="/page">Go to pages</a>
+        {props.photos.map((photo: Photo, index) => (
+          <Card key={index} src={photo.src.large} />
+        ))}
+      </Container>
     </>
   );
 }
