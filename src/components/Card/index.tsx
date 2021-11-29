@@ -7,6 +7,9 @@ import * as S from './styles';
 
 interface CardProps {
   src: string;
+  alt?: string;
+  width?: number;
+  height?: number;
 }
 
 const Card = (props: CardProps) => {
@@ -14,11 +17,9 @@ const Card = (props: CardProps) => {
 
   return (
     <S.Wrapper>
-      <div
-        style={
-          loading ? { opacity: 0, height: 0, width: 0 } : { display: 'block' }
-        }
-      >
+      {loading && <Skeleton height={369} width={369} />}
+
+      <S.Card loading={loading ? 'isLoading' : ''}>
         <Image
           loading="lazy"
           src={props.src}
@@ -26,11 +27,9 @@ const Card = (props: CardProps) => {
           width={369}
           height={369}
           objectFit="cover"
-          onLoad={() => setLoading(false)}
+          onLoadingComplete={() => setLoading(false)}
         />
-      </div>
-
-      {loading && <Skeleton height={369} width={369} />}
+      </S.Card>
     </S.Wrapper>
   );
 };

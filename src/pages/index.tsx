@@ -35,8 +35,8 @@ export default function Home(props: Props) {
       <Container>
         <Logo />
         <a href="/page">Go to pages</a>
-        {props.photos.map((photo: Photo, index) => (
-          <Card key={index} src={photo.src.large} />
+        {props.photos.map((photo: Photo) => (
+          <Card key={photo.id} src={photo.src.large} />
         ))}
       </Container>
     </>
