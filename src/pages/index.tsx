@@ -4,6 +4,7 @@ import Base from 'template/Base';
 import Card from 'components/Card';
 import Gallery from 'components/Gallery';
 import SectionMain from 'components/SectionMain';
+import Pagination from 'components/Pagination';
 
 import { getPhotos } from 'service/photos';
 
@@ -38,6 +39,8 @@ export default function Home(props: Props) {
           <Card key={photo.id} src={photo.src.large} />
         ))}
       </Gallery>
+
+      <Pagination currentPage={props.page} totalResults={props.total_results} />
     </Base>
   );
 }
