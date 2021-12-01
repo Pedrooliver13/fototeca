@@ -51,7 +51,12 @@ export const Wrapper = styled.footer`
     @media (max-width: ${C.SM}) {
       font-size: 1.3rem;
       line-height: 2;
+      flex-direction: column;
       justify-content: center;
     }
+  }
+
+  @media (max-width: ${C.SM}) {
+    margin-top: 0;
   }
 `;

@@ -1,13 +1,7 @@
 import Button from 'components/Button';
+import { Props } from 'types/SectionMain';
 
 import * as S from './styles';
-
-type Props = {
-  title: string;
-  subtitle?: string;
-  buttonText: string;
-  buttonHref?: string;
-};
 
 const SectionMain = ({
   title,

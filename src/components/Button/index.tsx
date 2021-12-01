@@ -1,15 +1,6 @@
-import { LinkProps } from 'next/link';
+import { Props } from 'types/Button';
 
 import * as S from './styles';
-
-type ButtonProps = {
-  href: string;
-  secondary?: boolean;
-  disabled?: boolean;
-  children?: React.ReactNode;
-};
-
-type Props = ButtonProps & LinkProps;
 
 const Button = ({ children, secondary, disabled, href }: Props) => {
   return (

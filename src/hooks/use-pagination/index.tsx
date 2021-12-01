@@ -16,7 +16,7 @@ export const usePagination = (currentPage = 1, totalResults = 40) => {
   }, [currentPage, baseUrl, Router]);
 
   const handlePrevPage = useCallback(() => {
-    return Router.push(`${baseUrl}/?page=${currentPage + 1}`);
+    return Router.push(`${baseUrl}/?page=${currentPage - 1}`);
   }, [currentPage, baseUrl, Router]);
 
   const handlePageChange = useCallback(
