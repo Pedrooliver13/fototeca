@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import * as C from 'styles/constants';
 
 const GlobalStyled = createGlobalStyle`
   * {
@@ -68,6 +69,7 @@ const GlobalStyled = createGlobalStyle`
 
   body {
     line-height: 1;
+    background-color: ${C.COLOR_GRAY};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 `;
