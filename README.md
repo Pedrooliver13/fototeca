@@ -4,7 +4,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Pedrooliver13/Pizza.git
+$ git clone https://github.com/Pedrooliver13/fototeca.git
 
 # Go into the repository
 $ cd fototeca
