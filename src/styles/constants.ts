@@ -15,3 +15,8 @@ export const LG = '62rem';
 export const XL = '75rem';
 
 // COLORS
+export const COLOR_PRIMARY = '#005DFF';
+export const COLOR_SECONDARY = '#FF6A00';
+export const COLOR_WHITE = '#FFFFFF';
+export const COLOR_GRAY = '#757575';
+export const COLOR_GRAY_LIGHT = '#cccccc';

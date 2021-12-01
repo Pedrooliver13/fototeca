@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-interface CardProps {
-  loading?: string;
-}
+type CardProps = {
+  loading?: boolean;
+};
 
 export const Wrapper = styled.div`
   position: relative;
@@ -18,9 +18,14 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Card = styled.div`
-  ${(props: CardProps) =>
-    props.loading === 'isLoading'
-      ? { opacity: 0, height: 0, width: 0 }
-      : { opacity: 1, height: 'auto', width: 'auto' }};
+const CardModifiers = {
+  isLoading: { opacity: 0, height: 0, width: 0 },
+  normal: { opacity: 1, height: 'auto', width: 'auto' }
+};
+
+export const Card = styled.div<CardProps>`
+  ${({ loading }) => css`
+    ${loading ? CardModifiers.isLoading : CardModifiers.normal}
+  `}
+  transition: all 0.3s ease-in-out;
 `;

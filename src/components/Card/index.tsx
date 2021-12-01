@@ -19,7 +19,7 @@ const Card = (props: CardProps) => {
     <S.Wrapper>
       {loading && <Skeleton height={369} width={369} />}
 
-      <S.Card loading={loading ? 'isLoading' : ''}>
+      <S.Card loading={loading}>
         <Image
           loading="lazy"
           src={props.src}
