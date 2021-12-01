@@ -4,10 +4,16 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 
 ```bash
 # Clone this repository
-$ npx create-next-app -e https://github.com/Pedrooliver13/boilerplate
+$ git clone https://github.com/Pedrooliver13/Pizza.git
 
-# run
-yarn dev or npm run dev
+# Go into the repository
+$ cd fototeca
+
+# Install dependencies
+$ npm install ou yarn install
+
+# Run the app
+$ npm start ou yarn start
 
 ```
 ## :rocket: Technologies
