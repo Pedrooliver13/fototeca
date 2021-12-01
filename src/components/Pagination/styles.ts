@@ -8,18 +8,20 @@ export const Wrapper = styled.div`
   margin-top: 5rem;
 
   button {
+    display: inline-flex;
+    align-items: center;
     background: ${C.COLOR_GRAY_DARK};
-    height: 3rem;
-    padding: 5rem;
+    padding: 1.2rem;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     border: 0;
-    margin: 0 2px;
+    margin: 0 0.2rem;
     cursor: pointer;
-    border: 2px solid transparent;
+    border: 0.2rem solid transparent;
     outline: 0;
     font-size: 1rem;
     transition: 0.4s all ease;
+
     &:hover {
       background: ${C.COLOR_SECONDARY};
       color: #fff;
@@ -27,16 +29,17 @@ export const Wrapper = styled.div`
     &.disable {
       visibility: hidden;
     }
+
     &.prev,
     &.next {
-      display: none;
+      display: flex;
       background: #000;
       font-weight: bold;
-      letter-spacing: 1px;
+      letter-spacing: 0.1rem;
       &:hover {
         background: ${C.COLOR_PRIMARY};
         color: #fff;
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.4);
       }
     }
   }
@@ -45,19 +48,22 @@ export const Wrapper = styled.div`
       &.active {
         background: ${C.COLOR_SECONDARY};
         color: #fff;
-        border: 2px solid ${C.COLOR_GRAY};
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.3);
       }
     }
   }
-  @media (min-width: ${C.SM}) {
-    justify-content: space-between;
+
+  @media (max-width: ${C.MD}) {
+    justify-content: center;
+
     button {
       font-size: 1rem;
-      padding: 5px 10px;
+      padding: 0.7rem;
+      margin: 0 0.1rem;
+
       &.prev,
       &.next {
-        display: inherit;
+        display: none;
       }
     }
   }

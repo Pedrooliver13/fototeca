@@ -5,25 +5,9 @@ import Card from 'components/Card';
 import Gallery from 'components/Gallery';
 import SectionMain from 'components/SectionMain';
 import Pagination from 'components/Pagination';
+import { Props, Photo } from 'types/Home';
 
 import { getPhotos } from 'service/photos';
-
-type Photo = {
-  id: number;
-  photographer_url: string;
-  src: {
-    original: string;
-    small: string;
-    large: string;
-  };
-};
-
-type Props = {
-  total_results: number;
-  per_page: number;
-  page: number;
-  photos: Photo[];
-};
 
 export default function Home(props: Props) {
   return (

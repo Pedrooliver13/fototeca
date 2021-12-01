@@ -1,20 +1,21 @@
 import styled, { css } from 'styled-components';
 
-type CardProps = {
-  loading?: boolean;
-};
+import { CardStyleProps } from 'types/Card';
 
 export const Wrapper = styled.div`
   position: relative;
   display: block;
 
-  max-width: 36.9rem;
+  max-width: 35.9rem;
   width: 100%;
-  margin: 2px;
+  margin: 0.5rem;
+  padding: 0.5rem;
 
+  .skeleton,
   img {
     position: relative;
     border-radius: 1rem;
+    padding: 0.5rem;
   }
 `;
 
@@ -23,7 +24,7 @@ const CardModifiers = {
   normal: { opacity: 1, height: 'auto', width: 'auto' }
 };
 
-export const Card = styled.div<CardProps>`
+export const Card = styled.div<CardStyleProps>`
   ${({ loading }) => css`
     ${loading ? CardModifiers.isLoading : CardModifiers.normal}
   `}

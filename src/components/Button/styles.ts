@@ -1,10 +1,6 @@
 import styled, { css } from 'styled-components';
+import { Props } from 'types/Button';
 import * as C from 'styles/constants';
-
-type ButtonProps = {
-  secondary?: boolean;
-  disabled?: boolean;
-};
 
 const buttonModifier = {
   primary: {
@@ -25,7 +21,7 @@ const buttonModifier = {
   }
 };
 
-export const Wrapper = styled.a<ButtonProps>`
+export const Wrapper = styled.a<Props>`
   font-size: 1.5rem;
   text-align: center;
   display: flex;

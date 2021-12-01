@@ -2,12 +2,9 @@ import Head from 'next/head';
 
 import Menu from 'components/Menu';
 import Footer from 'components/Footer';
+import { ChildrenProps } from 'types/Base';
 
-export type BaseTemplateProps = {
-  children: React.ReactNode;
-};
-
-const Base = ({ children }: BaseTemplateProps) => {
+const Base = ({ children }: ChildrenProps) => {
   return (
     <>
       <Head>

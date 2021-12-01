@@ -1,12 +1,8 @@
 import { usePagination } from 'hooks/use-pagination';
 import { Container } from 'styles/container';
+import { Props } from 'types/Pagination';
 
 import * as S from './styles';
-
-type Props = {
-  currentPage: number;
-  totalResults: number;
-};
 
 const Pagination = ({ currentPage = 1, totalResults }: Props) => {
   const { handleNextPage, handlePrevPage, handlePageChange, lastPage } =

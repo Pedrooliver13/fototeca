@@ -24,4 +24,8 @@ export const Wrapper = styled.header`
       display: none;
     }
   }
+
+  @media (max-width: ${C.MD}) {
+    padding: 1rem;
+  }
 `;

@@ -1,10 +1,8 @@
+import { ChildrenProps } from 'types/Base';
+
 import * as S from './styles';
 
-type Props = {
-  children: React.ReactNode;
-};
-
-const Gallery = ({ children }: Props) => {
+const Gallery = ({ children }: ChildrenProps) => {
   return <S.Wrapper>{children}</S.Wrapper>;
 };
 
