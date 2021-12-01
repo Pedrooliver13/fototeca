@@ -1,7 +1,7 @@
 import client from 'service/api';
 
-export const getPhotos = async (pearPage = 40, page = 1, query = 'Nature') => {
+export const getPhotos = (page = 1, perPage = 39, query = 'Nature') => {
   return client.photos
-    .search({ query, per_page: pearPage, page: page })
+    .search({ query, per_page: perPage, page: page })
     .then((photos) => photos);
 };
