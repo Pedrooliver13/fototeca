@@ -10,10 +10,10 @@ $ git clone https://github.com/Pedrooliver13/fototeca.git
 $ cd fototeca
 
 # Install dependencies
-$ npm install ou yarn install
+$ npm install or yarn install
 
 # Run the app
-$ npm start ou yarn start
+$ npm start or yarn start
 
 ```
 ## :rocket: Technologies
