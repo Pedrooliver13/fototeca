@@ -5,7 +5,7 @@ export const Wrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 2rem;
+  padding: 2rem;
 
   ul {
     width: 40%;
@@ -14,7 +14,7 @@ export const Wrapper = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: ${C.COLOR_GRAY};
+    color: ${C.COLOR_GRAY_DARK};
 
     li {
       cursor: pointer;

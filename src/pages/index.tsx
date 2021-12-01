@@ -3,7 +3,7 @@ import { GetServerSideProps } from 'next';
 import Base from 'template/Base';
 import Card from 'components/Card';
 import Gallery from 'components/Gallery';
-import SectionMain from 'template/SectionMain';
+import SectionMain from 'components/SectionMain';
 
 import { getPhotos } from 'service/photos';
 
@@ -43,7 +43,7 @@ export default function Home(props: Props) {
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
-  const responses = await getPhotos(Number(query.page));
+  const responses = await getPhotos(Number(query.page) || 1);
 
   if (!responses) return { notFound: true };
 

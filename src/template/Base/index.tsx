@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import Menu from 'components/Menu';
+import Footer from 'components/Footer';
 
 export type BaseTemplateProps = {
   children: React.ReactNode;
@@ -16,6 +17,7 @@ const Base = ({ children }: BaseTemplateProps) => {
 
       <Menu />
       {children}
+      <Footer />
     </>
   );
 };
