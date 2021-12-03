@@ -8,6 +8,7 @@ module.exports = withPWA({
     disable: !isProd
   },
   images: {
-    domains: [process.env.IMAGE_DOMAIN]
+    domains: [process.env.IMAGE_DOMAIN],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384]
   }
 });

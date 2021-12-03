@@ -16,8 +16,7 @@ const buttonModifier = {
   disabled: {
     backgroundColor: `${C.COLOR_GRAY_LIGHT}`,
     color: `${C.COLOR_GRAY_DARK}`,
-    cursor: 'none',
-    pointerEvents: 'none'
+    cursor: 'none'
   }
 };
 

@@ -5,7 +5,7 @@ export const usePagination = (currentPage = 1, totalResults = 40) => {
   const Router = useRouter();
   const baseUrl = Router.pathname;
 
-  const limit = 40;
+  const limit = 12;
   const lastPage = useMemo(
     () => Math.trunc(totalResults / limit) + 1,
     [totalResults]

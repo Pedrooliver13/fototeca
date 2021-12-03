@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <S.Wrapper>
       <Link href="/">
-        <img src="./img/logo.svg" alt="logo" />
+        <img src="img/logo.svg" alt="Logo marca" />
       </Link>
     </S.Wrapper>
   );

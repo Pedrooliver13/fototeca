@@ -69,7 +69,7 @@ const GlobalStyled = createGlobalStyle`
 
   body {
     line-height: 1;
-    background-color: ${C.COLOR_GRAY};
+    background-color: ${C.COLOR_WHITE};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 `;

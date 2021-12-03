@@ -1,6 +1,6 @@
 import { GetServerSideProps } from 'next';
 
-import Base from 'template/Base';
+import Base from 'templates/Base';
 import Card from 'components/Card';
 import Gallery from 'components/Gallery';
 import SectionMain from 'components/SectionMain';
