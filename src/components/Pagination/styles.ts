@@ -11,15 +11,15 @@ export const Wrapper = styled.div`
     display: inline-flex;
     align-items: center;
     background: ${C.COLOR_GRAY_DARK};
-    padding: 1.2rem;
     color: #fff;
-    border-radius: 0.5rem;
     border: 0;
+    font-size: 1.2rem;
+    padding: 1.2rem;
     margin: 0 0.2rem;
     cursor: pointer;
+    border-radius: 0.5rem;
     border: 0.2rem solid transparent;
     outline: 0;
-    font-size: 1rem;
     transition: 0.4s all ease;
 
     &:hover {
@@ -58,11 +58,12 @@ export const Wrapper = styled.div`
 
     button {
       font-size: 1rem;
-      padding: 0.7rem;
-      margin: 0 0.1rem;
+      padding: 1rem;
+      margin: 0 0.2rem;
 
       &.prev,
-      &.next {
+      &.next,
+      &.hidden__md {
         display: none;
       }
     }

@@ -28,7 +28,10 @@ const Pagination = ({ currentPage = 1, totalResults }: Props) => {
             </button>
           )}
           {currentPage > 3 && (
-            <button onClick={() => handlePageChange(currentPage - 3)}>
+            <button
+              className="hidden__md"
+              onClick={() => handlePageChange(currentPage - 3)}
+            >
               {currentPage - 3}
             </button>
           )}
@@ -56,7 +59,10 @@ const Pagination = ({ currentPage = 1, totalResults }: Props) => {
             </button>
           )}
           {currentPage + 2 < lastPage && (
-            <button onClick={() => handlePageChange(currentPage + 3)}>
+            <button
+              className="hidden__md"
+              onClick={() => handlePageChange(currentPage + 3)}
+            >
               {currentPage + 3}
             </button>
           )}
