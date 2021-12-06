@@ -6,5 +6,5 @@ export type Props = {
 };
 
 export type CardStyleProps = {
-  loading?: boolean;
+  loading?: string;
 };
