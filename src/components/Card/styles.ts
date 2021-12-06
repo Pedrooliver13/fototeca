@@ -32,7 +32,7 @@ const CardModifiers = {
 
 export const Card = styled.div<CardStyleProps>`
   ${({ loading }) => css`
-    ${loading ? CardModifiers.isLoading : CardModifiers.normal}
+    ${loading === 'true' ? CardModifiers.isLoading : CardModifiers.normal}
   `}
   transition: all 0.3s ease-in-out;
 `;

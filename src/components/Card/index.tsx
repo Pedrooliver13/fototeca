@@ -21,7 +21,7 @@ const Card = (props: Props) => {
         />
       )}
 
-      <S.Card loading={loading}>
+      <S.Card loading={loading.toString()}>
         <Image
           loading="lazy"
           src={props.src}
