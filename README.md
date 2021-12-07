@@ -41,6 +41,7 @@ $ npm dev or yarn dev
 -  [styled-components](https://www.styled-components.com/)
 -  [React-testing-library](https://testing-library.com/docs/react-testing-library/cheatsheet)
 -  [Plop](https://plopjs.com/)
+-  [Pexels API](https://www.pexels.com/api/documentation/?language=javascript)
 
 
 
